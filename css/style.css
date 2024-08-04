@@ -8,11 +8,13 @@ body {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  min-width: 300px;
+  min-width: 700px;
 }
 
 .content-container {
   flex: 1;
+  display: flex;
+  flex-direction: column;
 }
 
 .header {
@@ -28,6 +30,7 @@ ul {
   display: flex;
   list-style: none;
   gap: 20px;
+  align-items: center;
 }
 
 a,
@@ -40,13 +43,38 @@ a,
 
 .logo {
   font-size: 24px;
-  color: #F9FAF8;
+}
+
+.logo,
+li a {
+  color: #FFAA01;
+}
+
+
+h2,
+h3,
+h4 {
+
+  font-family: "Sedan SC", serif;
+}
+
+h2,
+h4 {
+  color: #B20516;
+}
+
+h2 {
+  font-size: 48px;
+}
+
+h3 {
+  font-size: 36px;
 }
 
 .header,
 .footer,
 .hero {
-  background-color: #1F2937;
+  background-color: #010000;
 }
 
 .footer {
@@ -55,6 +83,7 @@ a,
   align-items: center;
   height: 50px;
   flex-shrink: 0;
+  color: #fff;
 }
 
 .hero {
@@ -62,11 +91,18 @@ a,
   align-items: center;
   justify-content: space-between;
   gap: 20px;
+  padding: 15px;
+  margin-bottom: 5px;
+}
+
+.hero img {
+  border: 2px solid #FFAA01;
+  border-radius: 5px;
 }
 
 .image-container {
   display: flex;
-  gap: 15px;
+  gap: 20px;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 10px;
@@ -87,11 +123,17 @@ q {
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 250px;
+  background-color: #1F2937;
+  flex-grow: 1;
 }
 
 .quote {
   display: flex;
   flex-flow: wrap column;
+  font-size: 36px;
+  font-style: italic;
+  color: #E5E7EB;
 }
 
 .quote-cite {
@@ -100,8 +142,51 @@ q {
 }
 
 
-.sign-up-container {
+.bg {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 50px;
+  background-color: #010000;
+  height: 80px;
+  width: 500px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.sign-up-container {
+  background-color: #FFAA01;
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.sign-up-text {
+  color: #fff;
+}
+
+
+.images img {
+  border: 3px solid #B20516;
+  border-radius: 4px;
+}
+
+.footer a {
+  flex: 0;
+}
+
+.hero-text {
+  min-width: 300px;
+}
+
+button {
+  border: 2px solid #B20516;
+  border-radius: 5px;
+  color: #B20516;
+  background-color: #FFAA01;
+  width: 80px;
+  height: 40px;
+  font-weight: bold;
 }
