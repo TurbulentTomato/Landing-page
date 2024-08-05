@@ -130,7 +130,7 @@ q {
 
 .quote {
   display: flex;
-  flex-flow: wrap column;
+  flex-flow: column wrap;
   font-size: 36px;
   font-style: italic;
   color: #E5E7EB;
